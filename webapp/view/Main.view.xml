@@ -1,0 +1,128 @@
+<mvc:View
+	controllerName="zpmdocmedicio.controller.Main"
+	xmlns:m="sap.m" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:sfb="sap.ui.comp.smartfilterbar" 
+    xmlns:core="sap.ui.core" 
+    xmlns:st="sap.ui.comp.smarttable">
+	<m:Page showHeader="false" class="zapp_fgc">
+		<m:Panel width="auto" class="sapUiResponsiveMargin zapp_fgc">
+			<m:headerToolbar>
+				<m:Toolbar>
+					<m:Title text="{i18n>Main.DocsMedicioTitle}" />
+				</m:Toolbar>
+			</m:headerToolbar>
+			<m:content>
+				<m:VBox>
+					<sfb:SmartFilterBar id="iSmartFilterDocMedicio" initialise="onInitialise_SmartFilterBar"
+						liveMode="false" entitySet="DocumentoMedicionSet" enableBasicSearch="false"
+						showClearButton="true" persistencyKey="pSFBDocMedicio">
+						<sfb:controlConfiguration>
+							<sfb:ControlConfiguration key="Zlinia" index="0" groupId="_BASIC" visibleInAdvancedArea="true"
+								preventInitialDataFetchInValueHelpDialog="false" mandatory="mandatory"/>
+							<sfb:ControlConfiguration key="Pmedida" index="1" groupId="_BASIC" visibleInAdvancedArea="true"
+								preventInitialDataFetchInValueHelpDialog="false"/>
+							<sfb:ControlConfiguration key="Pmedidatxt" index="2" groupId="_BASIC" visibleInAdvancedArea="true"
+								preventInitialDataFetchInValueHelpDialog="false"/>
+							<sfb:ControlConfiguration key="Equipo" index="3" groupId="_BASIC" visibleInAdvancedArea="true"
+								preventInitialDataFetchInValueHelpDialog="false"/>
+							<sfb:ControlConfiguration key="Ubitecnica" index="4" groupId="_BASIC" visibleInAdvancedArea="true"
+								preventInitialDataFetchInValueHelpDialog="false"/>
+							<sfb:ControlConfiguration key="Fechamedicion" index="5" groupId="_BASIC" visibleInAdvancedArea="true"
+								preventInitialDataFetchInValueHelpDialog="false"/>
+							<sfb:ControlConfiguration key="Orden" index="6" groupId="_BASIC" visibleInAdvancedArea="true"
+								preventInitialDataFetchInValueHelpDialog="false"/>
+							<sfb:ControlConfiguration key="Codiestacio" index="7" groupId="_BASIC" visibleInAdvancedArea="true"
+								preventInitialDataFetchInValueHelpDialog="false"/>
+							<sfb:ControlConfiguration key="Pmedidatipo" index="8" groupId="_BASIC" visibleInAdvancedArea="true"
+								preventInitialDataFetchInValueHelpDialog="false"/>
+							<sfb:ControlConfiguration key="Zclase" index="9" groupId="_BASIC" visibleInAdvancedArea="true"
+								preventInitialDataFetchInValueHelpDialog="false"/>
+						</sfb:controlConfiguration>
+						<sfb:layoutData>
+							<m:FlexItemData shrinkFactor="0" />
+						</sfb:layoutData>
+						<sfb:customData>
+							<core:CustomData key="dateFormatSettings"
+								value='\{"UTC":true\}' />
+						</sfb:customData>
+					</sfb:SmartFilterBar>
+					<m:HBox>
+						<st:SmartTable id="iSmartTableDocMedicio"
+							class="sapUiResponsiveContentPadding"
+							smartFilterId="iSmartFilterDocMedicio" showFullScreenButton="true"
+							useVariantManagement="true" entitySet="DocumentoMedicionSet"
+							enableAutoBinding="false" tableType="ResponsiveTable"
+							header="{i18n>Main.DocMedicioHeader}"
+							showRowCount="true" useExportToExcel="true"
+							persistencyKey="pSTDocMedicio" demandPopin="true"
+							requestAtLeastFields="Pmedida,Docmedicion,Fechamedicion,Orden,Pmedidatxt,Textodocmed,Ubitecnica,
+													Fechamedicion,Codiestacio,Pmedidatipo,Equipo">
+							<m:Table class="classTreeTableNoPadding" mode="None">
+								<m:columns>
+									<m:Column width="5rem">
+										<m:customData>
+											<core:CustomData key="p13nData"
+												value='\{"columnKey": "Pmedida", "sortProperty":"Pmedida","filterProperty":"Pmedida","leadingProperty": "Pmedida", "columnIndex" : "0","type":"string"}'/>
+										</m:customData>
+										<m:Text text="{path:'/#DocumentoMedicionSet/Pmedida/@sap:label'}"/>
+									</m:Column>
+
+									<m:Column width="5rem">
+										<m:customData>
+											<core:CustomData key="p13nData"
+												value='\{"columnKey": "Docmedicion", "sortProperty":"Docmedicion","filterProperty":"Docmedicion","leadingProperty": "Docmedicion", "columnIndex" : "1","type":"string"}'/>
+										</m:customData>
+										<m:Text text="{path:'/#DocumentoMedicionSet/Docmedicion/@sap:label'}"/>
+									</m:Column>
+
+									<m:Column width="5rem">
+										<m:customData>
+											<core:CustomData key="p13nData"
+												value='\{"columnKey": "Pmedidatxt", "sortProperty":"Pmedidatxt","filterProperty":"Pmedidatxt","leadingProperty": "Pmedidatxt", "columnIndex" : "2","type":"string"}'/>
+										</m:customData>
+										<m:Text text="{path:'/#DocumentoMedicionSet/Pmedidatxt/@sap:label'}"/>
+									</m:Column>
+                                    
+									<m:Column width="5rem">
+										<m:customData>
+											<core:CustomData key="p13nData"
+												value='\{"columnKey": "Textodocmed", "sortProperty":"Textodocmed","filterProperty":"Textodocmed","leadingProperty": "Textodocmed", "columnIndex" : "3","type":"string"}'/>
+										</m:customData>
+										<m:Text text="{path:'/#DocumentoMedicionSet/Textodocmed/@sap:label'}"/>
+									</m:Column>
+
+									<m:Column width="5rem">
+										<m:customData>
+											<core:CustomData key="p13nData"
+												value='\{"columnKey": "Fechamedicion", "sortProperty":"Fechamedicion","filterProperty":"Fechamedicion","leadingProperty": "Fechamedicion", "columnIndex" : "4","type":"string"}'/>
+										</m:customData>
+										<m:Text text="{path:'/#DocumentoMedicionSet/Fechamedicion/@sap:label'}"/>
+									</m:Column>
+								</m:columns>
+								<m:items>
+									<m:ColumnListItem >
+										<m:cells>
+											<m:Text text="{Pmedida}" />
+											<m:Text text="{Docmedicion}" />
+											<m:Text text="{Pmedidatxt}" />
+											<m:Text text="{Textodocmed}" />
+											<m:Text text="{Fechamedicion}" />
+										</m:cells>
+									</m:ColumnListItem>
+								</m:items>
+							</m:Table>
+							<st:layoutData>
+								<m:FlexItemData growFactor="100" baseSize="0%" />
+							</st:layoutData>
+						</st:SmartTable>
+					</m:HBox>
+				</m:VBox>
+			</m:content>
+		</m:Panel>
+
+		<m:dependents>
+			<m:BusyDialog id="BusyDialog" />
+		</m:dependents>
+	</m:Page>
+</mvc:View>

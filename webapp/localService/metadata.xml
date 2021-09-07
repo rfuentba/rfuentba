@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZPM_DOCS_MEDICION_SRV" xml:lang="es" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="DocumentoMedicion" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Pmedida"/>
+                    <PropertyRef Name="Docmedicion"/>
+                </Key>
+                <Property Name="Pmedida" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Punto de medida" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Pmedidatxt" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Denominación" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Pmedidatipo" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Tipo pto.medida" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Docmedicion" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="Documento med." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Textodocmed" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Texto" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Fechamedicion" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="Fecha" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Horamedicion" Type="Edm.Time" Nullable="false" Precision="0" sap:unicode="false" sap:label="Hora medición" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Valormedicion" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Lectura" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Usuariomedicion" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Creado por" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Clasecatalogo" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Clase catálogo" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Grupocodigo" Type="Edm.String" Nullable="false" MaxLength="8" sap:unicode="false" sap:label="Grupo códigos" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Textogrupocod" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="TextoGrp.codif." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Valorcodigo" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Código valorac." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Textovalorcod" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false" sap:label="Codif.txt.cód." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Cancelado" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Anulación" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Ubitecnica" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Ubicac.técnica" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Equipo" Type="Edm.String" Nullable="false" MaxLength="18" sap:unicode="false" sap:label="Equipo" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Aviso" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Notificación" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Orden" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Orden" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Operacion" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Operación" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Limitesup" Type="Edm.String" Nullable="false" MaxLength="22" sap:unicode="false" sap:label="LímiteSupAmbMed" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Limiteinf" Type="Edm.String" Nullable="false" MaxLength="22" sap:unicode="false" sap:label="LímInfAmbMedida" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Valorteoric" Type="Edm.String" Nullable="false" MaxLength="22" sap:unicode="false" sap:label="Valor teórico" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Textoadicional" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Texto" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Unidad" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="Unidad ámb.med." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Borrado" Type="Edm.Boolean" Nullable="false" sap:unicode="false" sap:label="Pet.borrado" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Codiestacio" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Codi Estació" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Frecuenciadia" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Frecuencia (días)" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityContainer Name="ZPM_DOCS_MEDICION_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="DocumentoMedicionSet" EntityType="ZPM_DOCS_MEDICION_SRV.DocumentoMedicion" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link rel="self" href="https://sapgwd.fgc.net:8001/sap/opu/odata/sap/ZPM_DOCS_MEDICION_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="https://sapgwd.fgc.net:8001/sap/opu/odata/sap/ZPM_DOCS_MEDICION_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

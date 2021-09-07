@@ -1,0 +1,323 @@
+.zapp_fgc .sapMPanelWrappingDivTb,
+.zapp_fgc .sapMPanelContent:not(.sapMPanelBGTransparent) {
+    border-bottom: none !important;
+}
+
+.zapp_fgc .PredNaranja {
+    border-color: #f9a429 !important;
+}
+
+.zapp_fgc .PredVerde {
+    border-color: #38a238 !important;
+}
+
+.zapp_fgc .PredVerde .sapUiIcon {
+    color: #38a238 !important;
+}
+
+.zapp_fgc .PredNaranja .sapUiIcon {
+    color: #f9a429 !important;
+}
+
+.zapp_fgc .PredCritico {
+    border-color: #BB0000 !important;
+}
+
+.zapp_fgc .PredCritico .sapUiIcon {
+    color: #BB0000 !important;
+}
+
+.zapp_fgc .sapMNLI-TextWrapper,
+.zapp_fgc .sapMTextMaxLine {
+    max-height: 100% !important;
+}
+
+.zapp_fgc .sapMTextLineClamp {
+    display: inline-block;
+}
+
+.zapp_fgc .sapMNLI:focus::before {
+    border: none !important;
+}
+
+.zapp_fgc .sapMLIB.sapMNLB .sapMText.sapMNLI-Datetime {
+    padding-top: 0.5rem !important;
+    display: inline-block !important;
+}
+
+.zapp_fgc .InfoLabel1 {
+    background-color: #97d700;
+    position: absolute !important;
+    bottom: 0px !important;
+    right: 0 !important;
+    opacity: 1 !important;
+}
+
+.zapp_fgc .InfoLabelParpadeo {
+    background-color: transparent !important;
+    position: absolute !important;
+    bottom: 0px !important;
+    right: 0 !important;
+    opacity: 1 !important;
+}
+
+.zapp_fgc .InfoLabel2 {
+    background-color: #c14646 !important;
+    position: absolute !important;
+    bottom: 0px !important;
+    right: 0 !important;
+    opacity: 1 !important;
+}
+
+.zapp_fgc .InfoLabelFin {
+    background-color: #0090d9 !important;
+    position: absolute !important;
+    bottom: 0px !important;
+    right: 0 !important;
+    opacity: 1 !important;
+}
+
+.zapp_fgc .GenericTag {
+    background: #ffffff !important;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
+    box-sizing: border-box !important;
+    border-radius: 0.125rem !important;
+    border-left-width: 0.25rem !important;
+    border-left-style: solid !important;
+    padding: 0 0.5rem 0 0.25rem !important;
+    display: inline-flex !important;
+    max-width: 100% !important;
+    flex-flow: row nowrap !important;
+    align-items: center !important;
+    page-break-after: auto !important;
+    min-width: 3.5625rem !important;
+}
+
+.zapp_fgc .InfoLabel {
+    box-sizing: border-box !important;
+    padding: 0 0.625rem !important;
+    text-align: center !important;
+    border-radius: 1.125rem !important;
+    height: 1rem !important;
+    display: inline-block !important;
+    max-width: 100% !important;
+}
+
+.InfoLabel .sapMBtnContent {
+    font-size: 0.6875rem !important;
+    line-height: 1rem !important;
+    color: #ffffff !important;
+    vertical-align: top !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.0125rem !important;
+    text-transform: uppercase !important;
+    display: inline-block !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    max-width: 100% !important;
+}
+
+.zapp_fgc .PredRojo {
+    background-color: #ff0000 !important;
+}
+
+.zapp_fgc .zpaneles .sapMTB {
+    height: auto !important;
+}
+
+.zapp_fgc .sapMLIB {
+    border-bottom: none !important;
+    background: transparent !important;
+}
+
+.zapp_fgc .sapMNLG {
+    box-shadow: none !important;
+}
+
+.zapp_fgc .sapMNCIconImage {
+    margin-top: 6% !important;
+}
+
+.zapp_fgc .sapMNLB-AuthorPicture {
+    width: 12rem !important;
+    height: 7rem !important;
+}
+
+.zapp_fgc .sapMNLB-AuthorPicture .sapMImg {
+    height: 100% !important;
+    width: 100% !important;
+    max-height: 100% !important;
+    border-radius: 0% !important;
+    max-width: 100% !important;
+}
+
+.zapp_fgc .sapMNLG .sapMNLI {
+    border-radius: 0.25rem !important;
+    border-top: 1px solid #b7b7b7 !important;
+    border-bottom: 1px solid #b7b7b7 !important;
+    border-right: 1px solid #b7b7b7 !important;
+}
+
+.zapp_fgc .sapMNLI-LSize .sapMNLI-Body {
+    width: 100% !important;
+}
+
+
+.zapp_fgc .sapMNLG .sapMNLG-Header {
+    border-top: 1px solid #b7b7b7 !important;
+    border-right: 1px solid #b7b7b7 !important;
+}
+
+.zapp_fgc .sapMNLG .sapMNLG-SubHeader {
+    border-bottom: 1px solid #b7b7b7 !important;
+    border-right: 1px solid #b7b7b7 !important;
+}
+
+.zapp_fgc .sapMNLI-LSize .sapMNLI-Body {
+    width: 100% !important;
+}
+
+.zapp_fgc .sapMPanelWrappingDivTbExpanded {
+    border-bottom: 1px solid #cccccc !important;
+}
+
+.zapp_fgc .Header>.sapMObjStatusTitle,
+.zapp_fgc .Header>.sapMObjectAttributeTitle {
+    color: #000 !important;
+    font-weight: bold !important;
+}
+
+.zapp_fgc .ZTitle {
+    font-size: 1.125rem !important;
+}
+
+.zapp_fgc .TitleHour {
+    font-weight: bold !important;
+}
+
+.zapp_fgc .Tile {
+    /*color: #333333 !important;*/
+    font-weight: bold !important;
+    font-family: "72", "72full", Arial, Helvetica, sans-serif !important;
+    font-size: 1rem !important;
+}
+
+/*.zapp_fgc .sapUxAPObjectPageHeaderContent .sapUxAPObjectPageHeaderObjectImage-Circle .sapUxAPObjectPageHeaderObjectImage {*/
+/*    border: 3px solid #97d700 !important;*/
+/*}*/
+
+.zapp_fgc .sapMNCIconImage {
+    margin-top: 6% !important;
+}
+
+.Avisos span.sapMBtnInner.sapMBtnReject,
+.Avisos span.sapMBtnInner.sapMBtnAccept {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.Avisos span.sapMBtnInner.sapMBtnAccept {
+    padding-right: 1rem !important;
+}
+
+.zapp_fgc .IconNaranja .sapMNCIconImage {
+    color: #e78c07 !important;
+}
+
+.zapp_fgc .IconVerde .sapMNCIconImage {
+    color: #2b7c2b !important;
+}
+
+.zapp_fgc .IconNeutro .sapMNCIconImage {
+    color: #D8D8D8 !important;
+}
+
+.zapp_fgc .BordeNaranja {
+    border: 2px solid #e78c07 !important;
+}
+
+.zapp_fgc .BordeVerde {
+    border: 2px solid #2b7c2b !important;
+}
+
+.zapp_fgc .BordeNeutro {
+    border: 0.5px solid #D8D8D8 !important;
+}
+
+.zapp_fgc .sapMTCRemove {
+    display: none !important;
+}
+
+/*.zapp_fgc .sapMTB{
+	border-bottom: none !important;
+}*/
+.zapp_fgc .iconAdd {
+    margin-top: 50% !important;
+    font-size: 1.5rem;
+}
+
+.zapp_fgc.zmeaspoint .sapMSegBBtnSel.Verde {
+    background-color: #2B7D2B !important;
+    color: #fff !important;
+}
+
+.zapp_fgc.zmeaspoint .sapMSegBBtnSel.Rojo {
+    background-color: #BB0000 !important;
+    color: #fff !important;
+}
+
+.zapp_fgc .sapUxAPObjectPageHeaderIdentifierSubTitleInContent {
+    color: #97d700 !important;
+    font-weight: bold !important;
+}
+
+.zapp_fgc .QuitarBotonExpanded .sapMPanelExpandableIcon {
+    display: none !important;
+}
+
+.zapp_fgc .sapUxAPBlockContainerDesktop {
+    padding: 0rem !important;
+}
+
+.zapp_fgc .Label {
+    margin-top: 7px;
+    margin-right: 7px;
+}
+
+.zapp_fgc li.sapMSegBBtn[title='Rebutjar'] >span {
+    /*	background-color: #E33042 !important;*/
+    color: red !important;
+}
+
+
+
+.customItemRed.sapMSLI {
+    background-color: red !important;
+}
+
+.customItemOrange.sapMSLI {
+    background-color: orange !important;
+}
+
+.customItemGreen.sapMSLI {
+    background-color: green !important;
+}
+
+.customAxisTextWeight.viz-axis-title {
+    font-weight: normal !important;
+}
+
+.customAxisTextWeight.v-title {
+    font-weight: normal !important;
+}
+
+.customAxisTextWeight.v-m-root.v-m-axisTitle {
+    font-weight: normal !important;
+}
+
+
+
+
+
+
