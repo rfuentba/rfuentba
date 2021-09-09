@@ -56,8 +56,7 @@
 							header="{i18n>Main.DocMedicioHeader}"
 							showRowCount="true" useExportToExcel="true"
 							persistencyKey="pSTDocMedicio" demandPopin="true"
-							requestAtLeastFields="Pmedida,Docmedicion,Fechamedicion,Orden,Pmedidatxt,Textodocmed,Ubitecnica,
-													Fechamedicion,Codiestacio,Pmedidatipo,Equipo">
+							requestAtLeastFields="Pmedida,Docmedicion,Fechamedicion,Orden,Pmedidatxt,Textodocmed,Ubitecnica,Codiestacio,Pmedidatipo,Equipo">
 							<m:Table class="classTreeTableNoPadding" mode="None">
 								<m:columns>
 									<m:Column width="5rem">
